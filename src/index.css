@@ -1,13 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+
+* {
+  margin:0;
+  padding: 0;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: #e4e2e2;
+  color: #222;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+.wrapper{
+  width: 1280px;
+  margin: 50px auto;
+}
+header .logo{
+  font-weight: 600;
+  font-size: 30px;
+}
+header ul.nav{
+  float: right;
+  list-style:none;
+}
+header ul.nav li{
+  display: inline;
+  margin-left: 25px;
+  cursor: pointer;
+}
+header ul.nav img{
+width: 25px;
+height: 25px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header .presentation {
+  margin: 50px 0;
+  background: url('./img/scale_2400.jpg') no-repeat;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: multiply;
+  background-color: #545353;
+  position: relative;
+
 }
+header .presentation::after {
+  content:'Лучшие товары для вашего дома';
+  position: absolute;
+  top:100px;
+  left: 50px;
+  width: 300px;
+  font-size: 40px;
+  font-weight: 600;
+  color: #fff;
+}
+
+footer {
+ text-align: center;
+ margin-top: 100px;
+}
+.photo {
+  width: 250px;
+  height: 250px;
+
+}
+.photo_box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin-left: 120px;
+  width: 80%;
+}
+.photo_box img:hover{
+  height: 280px;
+  width: 280px;
+  box-shadow: 10px, 10px, 8px, 3px;
+  
+}
+.btn{
+  background-color: #c13c3c;
+  border: none;
+  border-radius: 5px;
+  height: 20px;
+  color:#f7f6f6
+  
+}
+.btn :hover{
+  filter: brightness(120%);
+}
+.btn:active{
+  filter: brightness(80%);
+}
+.images{
+width: 400px;
+height: 400px;
+
+}
+.more_info{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+.info{
+  width: 50%;
+}
+.info p{
+  line-height: 2;
+  color: #090909;
+} 
