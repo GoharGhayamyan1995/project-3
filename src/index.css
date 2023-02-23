@@ -21,11 +21,16 @@ header .logo{
 header ul.nav{
   float: right;
   list-style:none;
+ 
 }
 header ul.nav li{
   display: inline;
   margin-left: 25px;
   cursor: pointer;
+}
+.link{
+  text-decoration: none;
+  color: #222;
 }
 header ul.nav img{
 width: 25px;
@@ -73,9 +78,7 @@ footer {
   width: 80%;
 }
 .photo_box img:hover{
-  height: 280px;
-  width: 280px;
-  box-shadow: 10px, 10px, 8px, 3px;
+transform: scale(1.05);
   
 }
 .btn{
@@ -109,3 +112,11 @@ height: 400px;
   line-height: 2;
   color: #090909;
 } 
+.about p{
+  color: #090909;
+  line-height: 2;
+  text-align: justify;
+}
+.about h1{
+  text-align: center;
+}
