@@ -17,7 +17,7 @@ function App() {
   const handleClick=()=>{setCount(count+1)}
   return (
     <div className="wrapper">
-      <Header handleClik={handleClick} count={count}/>
+      <Header count={count}/>
       <Routes>
       <Route path="/" element= {<Main handleClick={handleClick}/>}/>
       <Route path="/product/:id" element={<Product />}/>

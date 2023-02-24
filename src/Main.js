@@ -5,7 +5,6 @@ import photo2 from "./img/photo2.jpg"
 import photo5 from  "./img/photo5.jpg"
 import photo3 from "./img/photo3.jpg"
 import photo1 from "./img/photo1.jpg"
-import Button from "./Button"
 export default function Main({handleClick}){
   
     const data = [
@@ -24,7 +23,7 @@ export default function Main({handleClick}){
                 <img className="photo" src={el.img}alt={el.name}/></Link>
                 <h4>{el.name}</h4>
                 <h5>{el.price}</h5>
-                <Button handleClick={handleClick}/>
+                <button className="btn" onClick={handleClick}>в корзину</button>
                 </div>
                 ))}
          </div>)
